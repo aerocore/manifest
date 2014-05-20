@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- You can have as many remote repositories as you like -->
+  <remote name="px4" fetch="git://github.com/PX4" />
+  <remote name="libopencm3" fetch="git://github.com/libopencm3" />
+  <remote name="mavlink" fetch="git://github.com/mavlink" />
+  <remote name="nuttx" fetch="git://git.code.sf.net/p/nuttx" />
+  <remote name="aerocore" fetch="git://github.com/aerocore" />
+
+  <!-- List all the repositories you want to fetch -->
+  <!-- "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced -->
+  <project name="build" revision="refs/heads/master"  remote="aerocore" path="build">
+    <copyfile src="source-me.sh" dest="source-me.sh" />
+  </project>
+  <project name="libopencm3" revision="refs/heads/master"  remote="px4" path="libopencm3" />
+  <project name="Bootloader" revision="refs/heads/master" remote="px4" path="bootloader" />
+  <!-- project name="m4-bootloader" revision="refs/heads/master" remote="gumstix" path="bootloader" /-->
+  <project name="firmware" revision="refs/heads/master"  remote="px4" path="firmware" />
+  <!-- project name="m4-firmware" revision="refs/heads/master"  remote="gumstix" path="firmware" /-->
+  <project name="Nuttx" revision="refs/heads/master"  remote="aerocore" path="firmware/NuttX" />
+  <!-- project name="git" revision="refs/heads/master"  remote="nuttx" path="firmware/NuttX" /-->
+  <project name="mavlink" revision="refs/heads/master"  remote="mavlink" path="mavlink" />
+  <project name="qgroundcontrol" revision="refs/heads/master"  remote="mavlink" path="qgroundcontrol" />
+</manifest>
+
