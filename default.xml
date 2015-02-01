@@ -15,7 +15,7 @@
   <project name="build" revision="refs/heads/master"  remote="aerocore" path="build">
     <copyfile src="source-me.sh" dest="source-me.sh" />
   </project>
-  <project name="libopencm3" revision="refs/heads/master"  remote="px4" path="libopencm3" />
+  <project name="libopencm3" revision="refs/heads/master"  remote="aerocore" path="libopencm3" />
   <project name="Bootloader" revision="refs/heads/master" remote="px4" path="bootloader" />
   <!-- project name="m4-bootloader" revision="refs/heads/master" remote="gumstix" path="bootloader" /-->
   <project name="Firmware" revision="refs/heads/master"  remote="aerocore" path="firmware" />
