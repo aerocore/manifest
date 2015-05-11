@@ -51,8 +51,9 @@ initialized in your working directory. Your directory should now
 contain a .repo directory where repo control files such as the manifest are
 stored but you should not need to touch this directory.
 
-***
+------------------------------------------------------------------------------
 **Note:**
+
 You can use the **-b** switch to specify the branch of the repository to use.
 We develop on the **dev** branch and filter stable changes down to **master**
 branch.
@@ -72,7 +73,8 @@ To get back to the known stable version, type:
     $ repo sync
 
 To learn more about repo, look at http://source.android.com/source/version-control.html 
-***
+
+------------------------------------------------------------------------------
 
 **3.  Fetch all the repositories.**
 
