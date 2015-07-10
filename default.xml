@@ -17,7 +17,7 @@
   </project>
   <project name="libopencm3" revision="refs/heads/master"  remote="aerocore" path="libopencm3" />
   <project name="Bootloader" revision="refs/heads/aerocore2" remote="aerocore" path="bootloader" />
-  <project name="Firmware" revision="refs/heads/aerocore2-master"  remote="aerocore" path="firmware" />
+  <project name="Firmware" revision="refs/heads/aerocore2-beta"  remote="aerocore" path="firmware" />
   <project name="mavlink" revision="refs/heads/master"  remote="mavlink" path="mavlink" />
   <project name="qgroundcontrol" revision="refs/heads/master"  remote="mavlink" path="qgroundcontrol" />
 </manifest>
