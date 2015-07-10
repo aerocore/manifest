@@ -105,7 +105,7 @@ Start by building a utility library for our processor:
 
     $ make -C libopencm3 lib
 
-Next, build the bootloader:
+Next, build the bootloader [OPTIONAL]:
 
     $ make -C bootloader
 
@@ -130,9 +130,9 @@ required packages for your operating system.
 **7. Flash your board:**
 
 Now you just have to write the binaries you've built to your hardware. Write
-the bootloader and NuttX into flash memory:
+the firmware into flash memory:
 
-    $ openocd -f build/gumstix-aerocore.cfg -c 'init; reset halt; flash write_image erase bootloader/px4aerocore_bl.bin 0x08000000; flash write_image erase firmware/Images/aerocore_default.bin 0x08004000; reset run; exit'
+    $ make aerocore_default upload 
 
 Hooray, you are done!
 
